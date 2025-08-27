@@ -1,0 +1,12 @@
+#🔄 Problem: Reverse a Word
+#Description:
+#Write a Python program that asks the user to enter a word, and then prints that word in reverse order.
+
+word = str(input("Enter a word: "))
+position = 1
+reversed_word = str()
+while position < len(word) or position == len(word):
+    letter = str(word[-position])
+    reversed_word = reversed_word + letter
+    position += 1
+print(f"The reversed word is: {reversed_word}")
