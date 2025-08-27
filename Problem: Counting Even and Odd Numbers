@@ -1,0 +1,19 @@
+#Problem: Counting Even and Odd Numbers
+#Write a Python program that:
+#Asks the user how many numbers they want to enter.
+#Lets the user enter that many numbers (one at a time).
+#Counts how many of those numbers are even and how many are odd.
+#Prints the total count of evens and odds at the end.
+
+entry = int(input("How many numbers will you enter?:"))
+count = 0
+odd_numbers = 0
+even_numbers = 0
+while count < entry:
+    ask = int(input("Enter a number:"))
+    count += 1
+    if ask % 2 == 0:
+        even_numbers += 1
+    else:
+        odd_numbers += 1
+print(f"You entered {even_numbers} even numbers and {odd_numbers} odd numbers.")
