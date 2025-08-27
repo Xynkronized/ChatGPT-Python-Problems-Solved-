@@ -1,0 +1,19 @@
+#🔁 Problem: Count the Vowels in a Word
+# Description:
+# Write a Python program that asks the user to enter a word (a string), and then counts how many vowels are in that word.
+# Vowels are: a, e, i, o, u (both lowercase and uppercase should be counted).
+
+vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+word = str(input("Enter a word or phrase:"))
+characters = len(word)
+position = 0
+Number_of_vowels = 0
+character = ()
+
+while position < len(word):
+    character = str(word[position])
+    if character in vowels:
+       Number_of_vowels = Number_of_vowels + 1
+    position = position + 1
+
+print(f"The number of vowels in '{word}' is: {Number_of_vowels}")
