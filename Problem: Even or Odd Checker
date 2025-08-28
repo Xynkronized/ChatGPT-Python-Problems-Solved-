@@ -1,0 +1,16 @@
+#📝 Problem: Even or Odd Checker
+#Write a Python function called check_number that takes one integer as input.
+#If the number is even, return "Even".
+#If the number is odd, return "Odd".
+#Then, ask the user for a number, call the function, and print the result.
+
+def check_number(insert):
+    if insert % 2 == 0:
+        result = "Even"
+        return result
+    else:
+        result = "Odd"
+        return result
+
+insert = int(input("Enter an integer:"))
+print(f"The number is {check_number(insert)}")
